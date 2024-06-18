@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mihailescu Dominic-Dorian",
+  "license": "ISC",
+  "description": "Domomusic,muzica,magazin muzica, magazin muzica online, instrumente, chitara, bass, inchiriere instrumente, clape, pian, inchiriere chitara, inchiriere bass, Domomuzic site, Domomuzic magazin online, mixer",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.0",
+    "path": "^0.12.7",
+    "sass": "^1.77.0",
+    "sharp": "^0.33.3"
+  }
+}

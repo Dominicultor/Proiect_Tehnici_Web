@@ -1,0 +1,94 @@
+footer{
+
+    #link-top{
+      position:fixed;
+      bottom:0.3em;
+      opacity:0.5;
+      left:0.1em;
+      width:3rem;
+      box-sizing: border-box;
+      height:3rem;
+      line-height:3rem;
+      text-align:center;
+      border:5px solid var(--cul-2);
+      border-radius:50%;
+      background: rgb(220,220,220);
+      font-size: 2.5em;
+      transition:all 0.7s linear;
+      box-shadow:  0 0 0.30em 0.30em #000000;
+    }
+    #link-top:hover{
+      background-color: var(--cul-3) ;  
+    }
+    #triunghi{
+      position: relative;
+      vertical-align: top;
+      display: inline-block;
+      transform: translateY(-15%);
+      width: 1em;
+      height: 1em;
+      color: black;
+      transition: all 0.7s linear;
+    }
+  }
+  
+  
+  html{
+    --cul-1: #FFFFFF;
+    --cul-2:#4D11F5;
+    --cul-3:#F5118F;
+    --cul-4:#F50300;
+    --cul-5: #9711F5;
+    --cul-6: rgb(187, 6, 6);
+  }
+
+  ::cue{
+    background-color: var(--cul-4);
+    color: var(--cul-2);
+    font-size: 1em;
+}
+
+a:visited {
+  color: black; 
+}
+
+
+a[href^="http"]::before {
+  content: "⮳";
+  font-size: 150%; /* Font-size cu 50% mai mare față de dimensiunea fontului linkului */
+  margin-right: 0.2em;
+}
+
+
+a[href^="http"]:hover::before {
+  color: red; 
+}
+
+main a, main p a {
+  position: relative;
+  display: inline-block;}
+
+main a::after, main p a::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50%;
+  background: radial-gradient(circle,var(--cul-3) 0%, var(--cul-2) 40%, transparent 80%, transparent 100%);
+  background-position: center;
+  background-size: 0;
+  border-radius: 50%;
+  transition: background-size 1s ease-in-out;
+  z-index: -1;
+}
+
+main a:hover::after, main p a:hover::after {
+  background-size: 100%;
+}
+
+a:active {
+  color: var(--cul-5);
+  border: 2px solid black; /* Apare un border în jurul linkului */
+}

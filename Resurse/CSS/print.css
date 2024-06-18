@@ -1,0 +1,196 @@
+@media print {
+
+	#absolut{
+		position: absolute;
+		display: inline-block;
+		bottom:5%;
+		width:70%;
+		height:20px;
+		right:12%;
+		overflow: visible;
+	}
+	#absolut::after{
+		position: absolute;
+		font-size:10px;
+		right:12%;
+		border:inset 5px black;
+		width:70%;
+		height:35px;
+		display: inline-block;
+    	content: "Acesta este un proiect scolar!";
+	}
+
+	h1{
+		margin-top: 10%;
+		text-align:center;
+		margin-left:1cm;
+	}
+	.meniu {
+		display: block;
+        list-style-type: none;
+        padding: 0;
+		page-break-after: always;
+    }
+
+    .meniu li {
+        display: block;
+        margin-bottom: 10px; 
+    }
+
+    .meniu li div {
+        display: block;
+		margin-bottom: 5px; 
+    }
+
+    .meniu ul {
+		display: block;
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+    .meniu ul li {
+		display: block;
+        padding: 5px 0;
+    }
+	.container-iframes{
+		display:none;
+	}
+	.taburi-iframe>a{
+		display:none;
+	}
+	iframe{
+		display:none;
+	}
+	#dv-prezentare-1{
+		display:none;
+	}
+	#link-top{
+		display:none;
+	}
+	#grid-pagina{
+		display: block;
+		grid-template-columns: 1fr;
+			font-size: 10px;
+			box-sizing:border-box;
+			page-break-before:always;
+			background-color: white;
+			
+			}
+			html, body {
+			width: 210mm;
+			height: 282mm;
+					overflow:visible !important;
+			}
+
+		
+		
+		#grid-pagina div:nth-child(5){
+			
+			page-break-before:always;
+		}
+
+		footer{
+			page-break-before: always;
+		}
+		#watermark
+		{
+			display: block;
+			position: fixed;
+			bottom:0;
+			color:rgba(0,0,0,0.3);
+			right:0%;
+		}
+		#watermark::after{
+			width: 4cm;
+			height: 1cm;
+			padding:5px;
+			display: block;
+			background: white;
+			border:3px solid black;
+			border-radius: 10px;
+			content:"Copyright Mihailescu Dominic";
+		}
+
+	#end{
+		page-break-before: always;
+	}
+}
+
+	@page {
+		size: A4 portrait;
+		margin-bottom:2cm;
+		margin-top:2cm;
+		counter-increment: page;
+			
+	}
+	@page:left{
+
+		margin-left:2cm;
+		margin-right:1cm;
+		border-radius: 20cm;
+	}
+	@page:right{
+
+		margin-right:2cm;
+		margin-left:1cm;
+	}
+
+
+	footer{
+		bottom:0;
+		width:100%;
+		text-align:center;
+	}
+
+	::cue{
+		background-color: var(--culoare-fundal);
+		color: var(--culoare-accent);
+		font-size: 1em;
+	}
+	
+	a:visited {
+		color: red; 
+	  }
+	  a:visited {
+		color: red; 
+	  }
+	  
+	  a[href^="http"]::before {
+		content: "⮳";
+		font-size: 150%; 
+		margin-right: 0.2em;
+	  }
+	  
+	  
+	  a[href^="http"]:hover::before {
+		color: red; 
+	  }
+	  
+	  main a, main p a {
+		position: relative;
+		display: inline-block;}
+	  
+	  main a::after, main p a::after {
+		content: '';
+		position: absolute;
+		top: 60%;
+		left: 65%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		height: 50%;
+		background: radial-gradient(circle,var(--culoare-accent) 0%, var(--culoare-border) 40%, transparent 80%, transparent 100%);
+		background-position: center;
+		background-size: 0;
+		border-radius: 50%;
+		transition: background-size 1s ease-in-out;
+		z-index: -1;
+	  }
+	  
+	  main a:hover::after, main p a:hover::after {
+		background-size: 100%;
+	  }
+	  
+	  a:active {
+		color: var(--culoare-inchisa);
+		border: 2px solid black; /* Apare un border în jurul linkului */
+	  }

@@ -1,0 +1,112 @@
+@keyframes animatie-submeniu {
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+  
+  nav {
+    --inaltime-meniu: 2.5em;
+    --latime-buton: 150px;
+    height: var(--inaltime-meniu);
+    background-color: var(--cul-6);
+    margin-bottom: 1em;
+  }
+  
+  #hamburger {
+    display: none;
+  }
+  
+  #ch-menu {
+    display: none;
+  }
+  
+  #acasa-mediu {
+    display: none;
+  }
+  
+  .meniu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2em;
+    background-color: var(--cul-6);
+  }
+  .meniu ul {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--cul-6);
+    transform-origin: center;
+    transform: scaleY(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  .meniu ul li {
+    display: inline-block;
+  }
+  .meniu ul li a {
+    display: block;
+    width: auto;
+  }
+  .meniu li {
+    position: relative;
+    display: inline-block;
+    width: var(--latime-buton);
+    height: var(--inaltime-meniu);
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .meniu li div {
+    line-height: var(--inaltime-meniu);
+    color: var(--cul-2);
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 1s linear;
+  }
+  .meniu li div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to right, var(--cul-6), white, var(--cul-6));
+    transform-origin: left;
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
+  .meniu li div:hover::before {
+    bottom: 0;
+    opacity: 1;
+    transform: translateY(400%);
+  }
+  .meniu li a {
+    line-height: var(--inaltime-meniu);
+    color: var(--cul-2);
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 1s linear;
+  }
+
+  .meniu li:hover > ul {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    transform-origin: center;
+    animation: animatie-submeniu 0.5s linear 1 forwards;
+  }
+
+  .meniu li a:hover{
+   background-color: black;
+
+
+
+
+  }

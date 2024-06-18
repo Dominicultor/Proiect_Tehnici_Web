@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+    <head>
+        <title>Domomusic</title>
+        <meta name="keywords" content="Domomusic,muzica,magazin muzica, magazin muzica online
+        , instrumente, chitara, bass, inchiriere instrumente, clape, pian, inchiriere chitara, inchiriere bass, 
+        Domomuzic site, Domomuzic magazin online, mixer"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="Magazinul Domomusic. Muzica pentru toti. Instrumente, echipament
+        , soft-uri, lectii online, inchirieri de instrumente. Livrare la domiciliu oriunde in Bucuresti.">
+        <%- include("../fragmente/head.ejs") %>
+
+
+
+
+  </head>
+
+  <body>
+    <%- include("../fragmente/header.ejs") %>
+
+
+    <main>
+      <div id="grid-pagina">
+        <section id="Prezentare">
+            <h2>Bine ati venit!</h2>
+                
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi unde beatae voluptas itaque quaerat. Cum, dolores sequi praesentium error excepturi libero est mollitia quia possimus porro ut aliquam nobis itaque.
+                
+                    
+                <section id="Demonstratie">
+                    <div class="container-iframe">
+                        <div class="taburi-iframe">
+                            <a href = "https://www.youtube.com/embed/Gy1LSNhiMm4?si=QQUzJrg1MrXU7A4n" target="ifr-video">Mike Stringer</a>
+                            <a href = "https://www.youtube.com/embed/jAtfaCiMw8g?si=A4MVnM6EY3nZe9A7" target="ifr-video">Plini</a>
+                        </div>
+                    <iframe name = "ifr-video" width="560" height="315" src="https://www.youtube.com/embed/Gy1LSNhiMm4?si=QQUzJrg1MrXU7A4n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                </section>
+                <!--iframe-uri-->
+                <a href="http://www.google.com">Google</a>
+                <!--link extern la google-->
+        </section>
+        <section id="promotii">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <video controls preload="metadata" poster="Resurse/imagini/poster.jpg" width="60%" min-width="300px" max-width="800px">
+                <source src="Resurse/video/video.mp4" type="video/mp4" >
+                <source src="Resurse/video/video.ogv" type="video/ogv">
+                <track default src="Resurse/video/my_captions_ro.vtt" kind="captions" srclang="ro" label="romana" />
+                <track  src="Resurse/video/my_captions_eng.vtt" kind="captions" srclang="en" label="engleza" />
+              </video>
+           
+        </section>
+        <section id="anunturi">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="orar">
+            <h2>Program de functionare a magazinului</h2>
+            <table id="tab-orar">
+                <thead>
+
+                    <tr>
+                        <th>Cod</th>
+                        <th>Perioadă</th>
+                        <th>Zi</th>
+                        <th>Interval dimineata</th>
+                        <th>Pauza de masa</th>
+                        <th>Interval seară</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td rowspan="5">Zile<br/>Lucrătoare</td>
+                        <td>Luni</td>
+                        <td>10-12</td>
+                        <td>12-14</td>
+                        <td>14-20</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Marti</td>
+                        <td>9-12</td>
+                        <td>12-14</td>
+                        <td>14-21</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Miercuri</td>
+                        <td>9-11</td>
+                        <td>11-13</td>
+                        <td>14-21</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Joi</td>
+                        <td>9-11</td>
+                        <td>11-13</td>
+                        <td>14-21</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+                        <td>Vineri</td>
+                        <td>9-12</td>
+                        <td>12-14</td>
+                        <td>14-19</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td rowspan="2">Weekend</td>
+                        <td>Sambata</td>
+                        <td>10-12</td>
+                        <td>12-13</td>
+                        <td>13-16</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Duminica</td>
+                        <td>10-14</td>
+                        <td>-</td>
+                        <td>inchis</td>
+                    </tr>
+                </tbody>
+                <tfoot><tr><td colspan="6">Programul poate suferi modificari in timpul sarbatorilor</td></tr></tfoot>
+            </table> 
+        </section>
+        <!--orar-ul-->
+        <section id="calendar">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="lista_utilizatori">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="date_site">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
+        <section id="date_utilizatori">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </section>
+        </div>
+        <!--Grid-ul-->
+      
+      <section>
+        <a href="https://www.instagram.com/p/CE4Rwndgum0/"target="_blank"><h1>Our founder</h1></a>
+       </section>
+  
+  
+        <div>
+           <q>The beautiful thing about learning is nobody can take it away from you.</q>
+           <cite>B.B.King</cite>
+  
+        </div>
+
+        
+
+        <section>
+          <h2>Download our <b>LOGO:</b></h2>
+          <a href="D:\Main\Facultate\An_2 sem_2\Web\Resurse\imagini\LOGO.png" download >LOGO</a>
+        </section>
+        
+        <section>
+         <h1>Intrebari frecvente:</h1>
+         <details><summary>Aveti livrare la domiciliu?</summary>
+             <p>Da!</p></details>
+           
+         <details><summary>Se poate testa un produs in magazine?</summary>  
+             <p>Da!</p></details>    
+           
+         <details><summary>Exista si cursuri online de muzica?</summary>  
+             <p>Pentru o multitudine de cursuri oferim si variante online!</p></details>    
+          
+        </section>
+
+
+
+
+        </main>
+
+
+    <%- include("../fragmente/footer.ejs") %>
+    
+</body>
